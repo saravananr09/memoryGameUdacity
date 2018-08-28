@@ -1,5 +1,7 @@
 
-const icons = ["fa fa-diamond", "fa fa-paper-plane-o", "fa fa-paper-plane-o", "fa fa-anchor", "fa fa-diamond", "fa fa-anchor", "fa fa-bolt", "fa fa-bolt", "fa fa-cube", "fa fa-cube", "fa fa-leaf", "fa fa-leaf", "fa fa-bicycle", "fa fa-bicycle", "fa fa-bomb", "fa fa-bomb"];
+const icons = ["fa fa-diamond",  "fa fa-leaf", "fa fa-paper-plane-o", "fa fa-anchor", "fa fa-diamond", "fa fa-anchor", 
+"fa fa-bolt",  "fa fa-cube", "fa fa-leaf", "fa fa-bicycle","fa fa-bolt", "fa fa-cube", "fa fa-bicycle",
+ "fa fa-bomb", "fa fa-bomb","fa fa-paper-plane-o"];
 
 const cardsContainer = document.querySelector(".deck");
 
@@ -119,7 +121,7 @@ const timerContainer = document.querySelector(".timer");
 let liveTimer,
     totalSeconds = 0;
 
-timerContainer.innerHTML = totalSeconds + 's';
+timerContainer.innerHTML = totalSeconds + 'seconds';
 
 
  function startTimer() {
@@ -158,7 +160,7 @@ function reset() {
     stopTimer();
     isFirstClick = true;
     totalSeconds = 0;
-    timerContainer.innerHTML = totalSeconds + "s";
+    timerContainer.innerHTML = totalSeconds + "seconds";
 }
 
 
